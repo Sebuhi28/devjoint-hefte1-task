@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NovaTech</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.2.0/css/all.min.css"
+        integrity="sha512-F/yRpRY8sctKzP7exU5PLGejwg/QtjDX6CIy/41nApe7JqdZgCcCzJTNq9Rcp/XwbeeTGillGevBakruY15pxA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <nav class="navbar" aria-label="Primary navigation">
+            <div class="logo">NovaTech</div>
+            <button class="burger" type="button" aria-expanded="false" aria-controls="primary-navigation"
+                aria-label="Toggle navigation">
+                <img src="images/burger.png" alt="Menu" class="burger-icon">
+            </button>
+            <ul class="nav-links" id="primary-navigation">
+                <li><a href="#section-haqq">Haqqımızda</a></li>
+                <li><a href="#section-galereya">Qalereya</a></li>
+                <li><a href="#section-contact">Əlaqə</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="section-req">
+            <div class="req-container">
+                <h1 class="req-title"> Rəqəmsal Dünyada Sizin Güvənli Tərəfdaşınız</h1>
+                <p class="req-description">Biz biznesiniz üçün ən innovativ web və mobil həllləri sıfırdan hazırlayırıq.
+                </p>
+                <button class="req-button" type="button" data-target="#section-contact">Bizimlə Əlaqə</button>
+            </div>
+        </section>
+
+        <section id="section-haqq" class="section-haqq">
+            <div class="haqq-container">
+                <h1 class="haqq-title">Haqqımızda</h1>
+                <div class="haqq-content">
+                    <div class="haqq-content-left">
+                        <h2 class="haqq-content-title">Niyə bizi seçməlisiniz?</h2>
+                        <p class="haqq-content-description">10ildən artıq təcrübəmizlə layihələrinizi vaxtında və yüksək
+                            keyfiyyətlə təhvil
+                            veririk.Sürət , təhlükəsizlik və əlçatanlıq bizim əsas prinsiplərimizdir.
+                        </p>
+                        <div class="haqq-content-link">
+                            <h3 class="haqq-content-link-title">Texniki Dəstək Linkimiz:</h3>
+                            <p class="haqq-content-link-description">
+                                <a href="#">https://novatech-solutions.az/super-long-url-tracking-token-id-
+                                    9876543210qwertyuiopasdfghjklzxcvbnm1234567890</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="haqq-content-right">
+                        <div>
+                            <h1>150+</h1>
+                            <p class="haqq-content-right-description">Uğurlu Layihə</p>
+                        </div>
+                        <div>
+                            <h1>99%</h1>
+                            <p class="haqq-content-right-description">Müştəri Məmnuniyyəti</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="section-galereya" class="section-galereya">
+            <div class="galereya-container">
+                <h1 class="galereya-title">Layihələrimiz (Qalereya)</h1>
+                <div class="galereya-content">
+                    <div class="galereya-item1">
+                        <img src="images/closeup-programmer-coding-on-screen-hands-coding-html-and-programming-on-laptop-screen-web-development-developer-closeup-coding-programming-on-lap-MC89AB.jpg"
+                            alt="Galereya 1" class="galereya-image">
+                    </div>
+                    <div class="galereya-item2">
+                        <img src="images/coding-on-laptop-stockcake.jpg" alt="Galereya 2" class="galereya-image">
+                    </div>
+                    <div class="galereya-item3">
+                        <img src="images/coding-workstation-setup-stockcake.jpg" alt="Galereya 3"
+                            class="galereya-image">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="section-contact" class="section-contact">
+            <h2 class="contact-title">Bizimlə Əlaqə</h2>
+            <div class="contact-container">
+                <form class="contact-form" novalidate>
+                    <label for="name" class="contact-label">Ad və Soyad *</label>
+                    <span class="contact-error" id="name-error" aria-live="polite"></span>
+                    <input type="text" id="name" class="contact-input" placeholder="Əli Məmmədov"
+                        aria-describedby="name-error" required>
+
+                    <label for="email" class="contact-label">Elektron Poçt *</label>
+                    <span class="contact-error" id="email-error" aria-live="polite"></span>
+                    <input type="email" id="email" class="contact-input" placeholder="ali.mammadov@example.com"
+                        aria-describedby="email-error" required>
+
+                    <label for="message" class="contact-label">Mesajınız *</label>
+                    <span class="contact-error" id="message-error" aria-live="polite"></span>
+                    <textarea id="message" class="contact-textarea" placeholder="Sizin mesajınız..."
+                        aria-describedby="message-error" required></textarea>
+
+                    <button type="submit" class="contact-button">Göndər</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <p class="footer-text">© 2026 NovaTech. Bütün hüquqlar qorunur.</p>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+</body>
+
+</html>
